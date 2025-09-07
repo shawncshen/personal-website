@@ -1,18 +1,21 @@
 import Navigation from './components/Navigation';
+import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import WorkSection from './components/WorkSection';
-import ProjectsSection from './components/ProjectsSection';
+import HobbiesSection from './components/HobbiesSection';
 import TravelSection from './components/TravelSection';
+import FriendsSection from './components/FriendsSection';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
-      <Navigation />
       <main>
+        <HeroSection />
         <AboutSection />
         <WorkSection />
-        <ProjectsSection />
+        <HobbiesSection />
         <TravelSection />
+        <FriendsSection />
       </main>
       
       <footer className="bg-gray-100 border-t border-gray-200 py-8">

@@ -6,10 +6,11 @@ export default function Navigation() {
   const [activeSection, setActiveSection] = useState('about');
 
   const navItems = [
-    { href: '#about', label: 'About' },
-    { href: '#work', label: 'Work Exp' },
-    { href: '#projects', label: 'Projects' },
+    { href: '#about', label: 'About Me' },
+    { href: '#work', label: 'Work Experiences' },
+    { href: '#hobbies', label: 'Hobbies' },
     { href: '#travel', label: 'Travel' },
+    { href: '#friends', label: 'Friends & Family' },
   ];
 
   useEffect(() => {

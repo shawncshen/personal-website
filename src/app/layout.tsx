@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sahit | Personal Website",
-  description: "Personal portfolio and blog of Sahit - Software Engineer",
+  title: "Shawn Shen | Personal Portfolio",
+  description: "Personal portfolio of Shawn Shen - Software Engineer. Explore my work experiences, hobbies, travel adventures, and connections with friends & family.",
 };
 
 export default function RootLayout({
