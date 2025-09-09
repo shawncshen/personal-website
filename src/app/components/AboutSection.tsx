@@ -1,67 +1,65 @@
+'use client';
+
+// components/AboutSection.tsx
 export default function AboutSection() {
   return (
-    <section id="about" className="min-h-screen flex items-center justify-center px-6 py-20">
-      <div className="max-w-4xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <div>
-              <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
-                Hi, I'm{' '}
-                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                  Shawn
-                </span>
-              </h1>
-              <p className="text-xl text-gray-700">
-                Software Engineer & Full-Stack Developer
-              </p>
-            </div>
-            
-            <p className="text-gray-600 text-lg leading-relaxed">
-              I'm a passionate software engineer who loves building products that make a difference. 
-              Currently working at Microsoft, I specialize in full-stack development and have a keen 
-              interest in distributed systems and cloud technologies.
-            </p>
-            
-            <div className="flex space-x-4">
-              <a 
-                href="https://github.com/sahit" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-600 hover:to-gray-700 px-6 py-3 rounded-lg text-white font-medium transition-all duration-300 transform hover:scale-105"
-              >
-                GitHub
-              </a>
-              <a 
-                href="https://linkedin.com/in/sahit" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 px-6 py-3 rounded-lg text-white font-medium transition-all duration-300 transform hover:scale-105"
-              >
-                LinkedIn
-              </a>
-              <a 
-                href="mailto:sahit@example.com"
-                className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 px-6 py-3 rounded-lg text-white font-medium transition-all duration-300 transform hover:scale-105"
-              >
-                Email
-              </a>
-            </div>
-          </div>
-          
-          <div className="flex justify-center">
-            <div className="relative">
-              <div className="w-80 h-80 bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 rounded-full p-1">
-                <div className="w-full h-full bg-white rounded-full flex items-center justify-center">
-                  <div className="text-8xl">👨‍💻</div>
-                </div>
-              </div>
-              <div className="absolute -top-4 -right-4 w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center animate-pulse">
-                <span className="text-2xl">⚡</span>
-              </div>
-            </div>
-          </div>
+    <section
+      id="about"
+      className="scroll-mt-28 min-h-screen flex flex-col items-start justify-start px-6 pb-24"
+      style={{ paddingTop: '100px' }}
+    >
+       {/* About Me Title - Separate Container */}
+       <div className="w-full flex justify-center">
+        <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-zinc-900 text-center">
+          About Me
+        </h2>
+       </div>
+
+       {/* Text Content - Separate Container */}
+       <div className="max-w-4xl w-full text-left" style={{ marginLeft: '80px', marginTop: '50px', paddingRight: '40px' }}>
+        <div className="mt-8 space-y-5 text-lg md:text-xl leading-8 text-zinc-700 text-left pl-16">
+          <p className="font-semibold">Dear Reader,</p>
+
+          <p>
+            My name is Shawn and I am from Taiwan. I study computer science at
+            Georgia Tech. I moved to the US when I was in 3rd grade and I am
+            currently living in Georgia Tech&rsquo;s first-ever Hacker House!
+          </p>
+
+          <p>
+            Growing up, I have participated in countless competitions—from
+            representing my school in swimming tournaments to delivering a TEDx
+            talk on my journey to 1.6 million TikTok followers. I have failed a
+            lot. But one thing that has stuck with me is to never give up and
+            keep doing what I love. That is me.
+          </p>
         </div>
-      </div>
+
+        <figure className="mt-12" style={{ marginTop: '20px' }}>
+          <blockquote 
+            className="block rounded-xl bg-gradient-to-r from-blue-50 to-purple-50 px-8 py-4 text-base md:text-lg italic text-zinc-900 font-semibold shadow-lg ring-2 ring-blue-200 transform hover:scale-105 transition-all duration-300 w-fit max-w-full"
+            style={{ 
+              animation: 'pulse-glow 3s ease-in-out infinite',
+              boxShadow: '0 10px 25px rgba(59, 130, 246, 0.15)'
+            }}
+          >
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              "to never give up on my goals and fight for them every way possible."
+            </span>
+          </blockquote>
+        </figure>
+        
+        <style jsx>{`
+          @keyframes pulse-glow {
+            0%, 100% { 
+              box-shadow: 0 10px 25px rgba(59, 130, 246, 0.15), 0 0 0 rgba(59, 130, 246, 0.3);
+            }
+            50% { 
+              box-shadow: 0 15px 35px rgba(59, 130, 246, 0.25), 0 0 20px rgba(59, 130, 246, 0.4);
+            }
+          }
+        `}</style>
+       </div>
     </section>
   );
 }
